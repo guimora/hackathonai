@@ -2,7 +2,7 @@
 import openai
 
 # Configurar la API key de OpenAI
-openai.api_key = 'OPENAI_TOKEN'
+openai.api_key = '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'
 
 # Pedir al usuario que ingrese un texto
 texto_usuario = input("Requirement: ")
