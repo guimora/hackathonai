@@ -1,11 +1,9 @@
-
-
 import unittest
 from unittest.mock import patch
 from src.behaviour_generator import get_response_chatgpt
-from reqPanel import RequirementsPanel
-from resultPanel import ResultsPanel
-from MainFrame import MainFrame
+from src.gui.reqPanel import RequirementsPanel
+from src.gui.resultPanel import ResultsPanel
+from src.gui.mainFrame import MainFrame
 
 
 class TestMainFrame(unittest.TestCase):
@@ -34,5 +32,4 @@ class TestMainFrame(unittest.TestCase):
         self._onReturn()  # Call on return method 
 
         # Verify if the tests passed or not: 
-        self.assertEqual(self._visible, True)   # Visibility should be true after calling on return method  
-        self
+        self.assertEqual(self._visible, True)   # Visibility should be true after calling on return method

@@ -1,7 +1,7 @@
 import wx
-from reqPanel import RequirementsPanel
-from resultPanel import ResultsPanel
-from welcomePanel import WelcomePanel
+from src.gui.reqPanel import RequirementsPanel
+from src.gui.resultPanel import ResultsPanel
+from src.gui.welcomePanel import WelcomePanel
 from src.behaviour_generator import get_response_chatgpt
 import src.utils.ticketing_jira as ticketing_jira
 
@@ -58,6 +58,7 @@ class MainFrame(wx.Frame):
         self.panel_welcome.Hide()
         self.panel_requirements.Show()
         self.Layout()
+
 
 app = wx.App(False)
 frame = MainFrame(None, 'Requirements')
