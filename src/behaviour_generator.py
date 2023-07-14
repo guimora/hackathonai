@@ -1,8 +1,12 @@
 # Importar la librería de ChatGPT (gpt-3.5-turbo)
+import os
 import openai
+from dotenv import load_dotenv
 
 # Configurar la API key de OpenAI
-openai.api_key = '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'
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_KEY")
 
 
 # Llamar a la API de ChatGPT para obtener sugerencias
