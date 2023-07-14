@@ -1,5 +1,5 @@
 # SimplePath
-ClearPath software is an application oriented for Product Owners to support them by creating behaviours properly for their products and removing any ambiguous idea.
+SimplePath software is an application oriented for Product Owners to support them by creating behaviours properly for their products and removing any ambiguous idea.
 
 ## Table content
 + Requeriments
