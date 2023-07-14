@@ -8,13 +8,12 @@ class ResultsPanel(wx.Panel):
         # Properties
         self.font = wx.Font(16, family=wx.FONTFAMILY_DEFAULT, style=0, weight=400, underline=False,
                             faceName="", encoding=wx.FONTENCODING_DEFAULT)
-        # self.SetBackgroundColour((237, 231, 230))
 
         # Widgets
         self.lbl_insert_reqs = wx.StaticText(self, label='Validate results, edit if necessary')
         self.txt_results = wx.TextCtrl(self, style=wx.TE_MULTILINE, size=(650, 166))
-        self.btn_ok = wx.Button(self, label='Ok')
-        self.btn_return = wx.Button(self, label='Return')
+        self.btn_ok = wx.Button(self, label='Create Jira Issue')
+        self.btn_return = wx.Button(self, label='Edit Requirement')
         self.lbl_insert_reqs.SetFont(self.font)
         self.txt_results.SetFont(self.font)
         self.btn_ok.SetFont(self.font)
