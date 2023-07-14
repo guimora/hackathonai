@@ -1,6 +1,7 @@
 import wx
 from reqPanel import RequirementsPanel
 from resultPanel import ResultsPanel
+from src.behaviour_generator import get_response_chatgpt
 
 
 class MainFrame(wx.Frame):
@@ -10,6 +11,7 @@ class MainFrame(wx.Frame):
         self.panel_results = ResultsPanel(self)
         self.panel_results.Hide()
         self.test_text = ''
+        self.request_text = ''
 
         self.sizer_frame = wx.BoxSizer(wx.VERTICAL)
         self.sizer_frame.Add(self.panel_requirements, 1, wx.EXPAND)
@@ -23,7 +25,7 @@ class MainFrame(wx.Frame):
         self.Show()
 
     def on_ok(self, event):
-        self.test_text = 'Update here'
+        self.test_text = get_response_chatgpt(self.panel_requirements.txt_reqs.GetValue())
         self.panel_requirements.Hide()
         self.panel_results.txt_results.SetValue(self.test_text)
         self.panel_results.Show()

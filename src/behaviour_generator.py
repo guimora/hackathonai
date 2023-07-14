@@ -2,7 +2,7 @@
 import openai
 
 # Configurar la API key de OpenAI
-openai.api_key = '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'
+openai.api_key = ''
 
 
 # Llamar a la API de ChatGPT para obtener sugerencias
