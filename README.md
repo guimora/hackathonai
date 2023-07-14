@@ -16,10 +16,10 @@ SimplePath software is an application oriented for Product Owners to support the
 ### Installation
 + Clone the project (git clone https://github.com/guimora/hackathonai.git)
 + Install the dependencies.
-+ Run behaviour_generator.py file and provide your requirement.
++ Run mainFrame.py file.
 
 ### Usage
-Explica cómo utilizar el proyecto una vez que esté instalado. Proporciona ejemplos de código, ejemplos de entrada y salida, y cualquier otra información relevante para que los usuarios comprendan cómo interactuar con tu software.
+PO will be able to enter any requirement and the tool based on AI will .
 
 ### Contribution
 Thos projects is just a proof of concept. We are strongly convinced that this can be scalable with new features.
